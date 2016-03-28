@@ -35,9 +35,9 @@ $(document).ready(() => {
     $('#lbEmail').mouseover(() => {
         ux.showEmail();
     });
-    $('#lbMsn').mouseover(() => {
-        ux.showMSN();
-    });
+    //$('#lbMsn').mouseover(() => {
+    //    ux.showMSN();
+    //});
     $("#dados").draggable();
     $("#vitais").draggable();
     $("#drogas").draggable();
@@ -139,11 +139,11 @@ class Ux {
         }
     };
     public showEmail() {
-        $("#lbEmail").text("e-mail/gtalk: petvetbr@gmail.com");
+        $("#lbEmail").text("e-mail: petvetbr@gmail.com");
     }
-    public showMSN() {
-        $("#lbMsn").text("msn: fe@pobox.com");
-    }
+    //public showMSN() {
+    //    $("#lbMsn").text("msn: fe@pobox.com");
+    //}
     public ResetValues() {
         maxAnimalWeight = 0;
         if (vcm.Animal()) {
